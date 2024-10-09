@@ -521,11 +521,35 @@ button {
     font-size: 12px;
   }
   .main__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-top: 400px;
+  }
+  .main__card-criteries {
+    max-width: 200px;
+    justify-content: center;
+  }
+  .main__card-descr {
+    text-align: center;
+  }
+  .reviews {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
   .reviews-container {
     padding: 0 12px;
     gap: 5px;
+  }
+  .reviews__cards {
+    display: flex;
+    overflow-y: unset;
+    transition: transform 0.3s ease;
+    width: 100%;
+    gap: 10px;
+    padding-bottom: 20px;
   }
   .reviews__title {
     font-size: 24px;
